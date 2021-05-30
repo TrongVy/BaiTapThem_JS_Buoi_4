@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <div class="header">
+            <h2>Bài 4:Cho biết tên và tọa độ nhà của 3 sinh viên. Cho biết tọa độ của trường đại học. Viết chương trình in tên sinh viên xa trường nhất.</h2>
+            <div class="header--content">
+                <p>Input: tên và tọa độ 3 sinh viên</p>
+                <p>handle:  <br>
+                    Bước 1:  khoảng cách từ nhà đến trường của sinh viên thứ nhất:tạo biến (x1,y1) là tọa độ của sv thứ nhất. (a,b) là tọa độ của trường: khoangCachSV1 = Math.sqrt( (x1-a)^2 +(y1-b)^2) <br>
+                    sinh viên thứ 2 và thứ 3 tương tự <br>
+                    Bước 2:khoảng cách nào lớn nhất thì sinh viên đó xa trường  <br>
+                              
+                </p>
+                <p>Output:sinh viên xa trường nhất</p>
+            </div>
+      </div>
+      <div class="input">
+          <label for="">sinh viên A có tọa độ là (x1,y1)</label> <br>
+          <input type="text" name="" id="x1" placeholder="nhập vào x1"> 
+          <input type="text" name="" id="y1" placeholder="nhập vào y1"> <br>
+          <label for="">sinh viên B có tọa độ là (x2,y2)</label> <br>
+          <input type="text" name="" id="x2" placeholder="nhập vào x2"> 
+          <input type="text" name="" id="y2" placeholder="nhập vào y2"> <br>
+          <label for="">sinh viên C có tọa độ là (x3,y3)</label> <br>
+          <input type="text" name="" id="x3" placeholder="nhập vào x3"> 
+          <input type="text" name="" id="y3" placeholder="nhập vào y3"> <br>
+          <label for="">Tọa độ trường (a,b)</label> <br>
+          <input type="text" name="" id="a" placeholder="nhập a">
+          <input type="text" name="" id="b" placeholder="nhập b"> <br>
+      
+           <button class="mt-2" id="btn">Tính Nào</button>
+           <div id="ketQua">
+                <p id="show"></p>
+           </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./4.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

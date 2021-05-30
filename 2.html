@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+      <div class="header">
+            <h2>Bài 2: Viết chương trình nhập vào tháng, năm. Cho biết tháng đó có bao nhiêu ngày</h2>
+            <div class="header--content">
+                <p>Input: nhập vào ngày tháng năm</p>
+                <p>handle:  <br>
+                    Bước 1: tạo 3 biến ngày tháng năm <br>
+                    Bước 2:nếu tháng = 1,3,5,7,8,10,12 thì ngayTrongThang = 31; <br>
+                    Bước 3: nếu tháng = 4,6,9,11 thì ngayTrongThang =30; <br>
+                    Bước 4: nếu năm nhuận (((nam % 4 == 0) && (nam % 100 != 0)) || 
+                    (nam % 400 == 0)) tháng 2 của năm nhuận => ngayTrongThang=29 else ngayTrongThang =28 <br>
+                     
+                </p>
+                <p>Output: xuất ra ngayTrongThang</p>
+            </div>
+      </div>
+      <div class="input">
+          <label for="">Nhập vào ngày</label> <br>
+          <input type="text" name="" id="ngay" placeholder="nhập vào ngày từ 1-31"> <br>
+          <label for="">Nhập vào tháng</label><br>
+          <input type="text" name="" id="thang" placeholder="nhập vào ngày từ 1-12"><br>
+          <label for="">Nhập vào năm</label> <br>
+          <input type="text" name="" id="nam" placeholder="nhập vào nam"> <br>
+           <button class="mt-2" id="btn">Click Me</button>
+           <div id="ketQua">
+                <p id="show"></p>
+           </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

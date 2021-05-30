@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div style="width:80%;margin:0 auto; background-color:rgb(166, 234, 255); padding: 20px;"> 
+        <h5>Bài 1:Viết chương trình nhập vào ngày, tháng, năm (Giả sử nhập đúng, không cần kiểm tra hợp lệ).
+          Tìm ngày, tháng, năm của ngày tiếp theo. Tương tự tìm ngày tháng năm của ngày trước đó</h5>
+          <p>input: ngày,tháng,năm</p>
+          <p>handle: <br> b1: tạo 3 biến ngay,thang,nam <br>
+            b2: **tháng 1,3,5,7,8,10 có 31 ngày : nếu ngay=1;
+              *ngayTruocDo= 30 +thang -1+nam;
+              *ngayTiepTheo = 2 +thang+ nam; <br>
+              nếu ngay=31;
+              *ngayTruocDo= 30 +thang +nam;
+              *ngayTiepTheo = 1 +(thang+1)+ nam; <br>
+              nếu ngay !=1 && ngay!=31:
+              *ngayTruocDo= ngay-1 +thang +nam;
+              *ngayTiepTheo = ngay +! +thang+ nam; <br>
+              **tháng 4-6-9-11: có 30 ngày: cách làm tương tự: <br>
+              **tháng 2 có 28 ngày: tương tự <br>
+              ** tháng 12 có 31 ngày: nếu ngày =31 =>ngayTiepTheo = 1+1+(nam+1)
+              
+          </p>
+        <p>output: xuất ra ngày trước đó và ngày tiếp theo</p>
+
+      </div>
+      <div style="width:50%;margin: 0 auto;">
+            <label for="">Nhập vào ngày</label> <br>
+            <input type="text" name="" id="ngay" placeholder="Nhập ngày từ 1-31"> <br>
+            <label for="">Nhập vào tháng</label> <br>
+            <input type="text" name="" id="thang" placeholder="Nhập tháng từ 1 đến 12"> <br>
+            <label for="">Nhập vào năm</label> <br>
+            <input type="text" name="" id="nam" placeholder="Nhập năm"> <br>
+            <button class="mt-1" id="btn">CLick Me</button>
+      </div>
+      <div id="ketQua" style="text-align: center; color: red;">
+        <p id="ngayTruocDo"></p>
+        <p id="ngayTiepTheo"></p>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="./1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
